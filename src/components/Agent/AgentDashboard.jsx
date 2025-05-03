@@ -23,6 +23,12 @@ import LogoutIcon from '@mui/icons-material/Logout';
 
 import { useNavigate } from 'react-router-dom';
 
+import ManageServicePersonnel from './AddServicePersonnel';
+import AssignServicePersonnel from './AssignServicePersonnel';
+import ViewIncomingRequests from './ViewIncomingRequests';
+import ManageBookingStatus from './ManageBookingStatus';
+import Ratings from './Ratings';
+
 const drawerWidth = 240;
 
 const AgentDashboard = () => {
@@ -31,9 +37,11 @@ const AgentDashboard = () => {
   const navigate = useNavigate();
 
   const navItems = [
-    { text: 'Register', icon: <AssignmentIcon /> },
+    // { text: 'Register', icon: <AssignmentIcon /> },
     { text: 'Add Service Personnel', icon: <PeopleIcon /> },
+    { text: 'Assign Service Personnel', icon: <AssignmentIcon /> },
     { text: 'Incoming Requests', icon: <MailIcon /> },
+    { text: 'My Bookings', icon: <MailIcon /> },
     { text: 'Assign Staff', icon: <AssignmentTurnedInIcon /> },
     { text: 'Ratings', icon: <StarRateIcon /> },
     { text: 'Logout', icon: <LogoutIcon /> },
@@ -57,10 +65,16 @@ const AgentDashboard = () => {
     switch (selectedPage) {
       case 'Dashboard':
         return <Typography>Welcome to the Agent Dashboard!</Typography>;
+      case 'Add Service Personnel':
+        return <ManageServicePersonnel />;
+      case 'Assign Service Personnel':
+         return <AssignServicePersonnel />;
+       case 'Incoming Requests':
+         return <ViewIncomingRequests />;
       case 'My Bookings':
-        return <Typography>Here are your current bookings.</Typography>;
-      case 'Settings':
-        return <Typography>Update your profile or preferences.</Typography>;
+        return <ManageBookingStatus />;
+      case 'Ratings':
+        return <Ratings />
       default:
         return <Typography>Coming soon...</Typography>;
     }

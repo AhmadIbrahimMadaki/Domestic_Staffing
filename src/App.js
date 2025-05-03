@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import HomePage from './components/LandingPage';
-import AgentRegistration from './components/AgentRegistration';
+import AgentRegistration from './components/Agent/AgentRegistration';
 import PersonnelRecord from './components/PersonnelRecord';
 import AddReview from './components/AddReview';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -17,6 +17,9 @@ import PersonnelData from './components/PersonnelData';
 import ServiceRequest from './components/ServiceRequest';
 import SuperAdmin from './components/Admin/SuperAdminDashboard';
 
+import Agent from './components/Agent/AgentDashboard';
+import AgentLoginForm from './components/Agent/Login';
+
 const theme = createTheme();
 
 function App() {
@@ -29,7 +32,6 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/register" element={<RegistrationForm />} />
         <Route path="/admin/login" element={<LoginForm />} />
-        <Route path="/agent-registration" element={<AgentRegistration />} />
         <Route path="/personnel-record" element={<PersonnelRecord />} />
         <Route path="/add-review" element={<AddReview />} />
         <Route path="/user-booking" element={<UserBookingForm />} />
@@ -39,6 +41,10 @@ function App() {
         <Route path="/service-personnel-details" element={<ServicePersonnelDetails />} />
         <Route path="/personnel-data" element={<PersonnelData />} />
         <Route path="/service-request" element={<ServiceRequest />} />
+
+        <Route path="/agent/dashboard" element={<Agent />} />
+        <Route path="/agent/login" element={<AgentLoginForm />} />
+        <Route path="/agent-registration" element={<AgentRegistration />} />
       </Routes>
     </Router>
     </ThemeProvider>

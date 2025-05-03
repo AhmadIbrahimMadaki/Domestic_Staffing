@@ -16,19 +16,21 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
-import HowToRegIcon from '@mui/icons-material/HowToReg';
+// import HowToRegIcon from '@mui/icons-material/HowToReg';
 import LoginIcon from '@mui/icons-material/Login';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import GroupIcon from '@mui/icons-material/Group';
-import StarRateIcon from '@mui/icons-material/StarRate';
+// import GroupIcon from '@mui/icons-material/Group';
+// import StarRateIcon from '@mui/icons-material/StarRate';
 
 const navLinks = [
     { label: 'Landing Page', path: '/', icon: <HomeIcon /> },
-    { label: 'Register', path: '/register', icon: <HowToRegIcon /> },
-    { label: 'Login', path: '/admin/login', icon: <LoginIcon /> },
-    { label: 'Agent', path: '/agent-registration', icon: <PersonAddIcon /> },
-    { label: 'Personnel', path: '/personnel-record', icon: <GroupIcon /> },
-    { label: 'Review', path: '/add-review', icon: <StarRateIcon /> },
+    // { label: 'Register', path: '/register', icon: <HowToRegIcon /> },
+    { label: 'Admin', path: '/admin/login', icon: <LoginIcon /> },
+    { label: 'Agent', path: '/agent/login', icon: <LoginIcon /> },
+    { label: 'Customer', path: '/', icon: <PersonAddIcon /> },
+    // { label: 'Agent', path: '/agent-registration', icon: <PersonAddIcon /> },
+    // { label: 'Personnel', path: '/personnel-record', icon: <GroupIcon /> },
+    // { label: 'Review', path: '/add-review', icon: <StarRateIcon /> },
   ];
 
 const Navbar = () => {

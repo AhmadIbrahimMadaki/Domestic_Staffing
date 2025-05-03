@@ -37,8 +37,8 @@ export default function SuperAdminLogin() {
   const handleLogin = () => {
     if (!validate()) return;
 
-    if (phone === '08143873421' && password === '12345678') {
-      navigate('/superadmin/dashboard');
+    if (phone === '08108324239' && password === '87654321') {
+      navigate('/agent/dashboard');
     } else {
       alert('Invalid credentials');
     }
@@ -53,7 +53,7 @@ export default function SuperAdminLogin() {
     >
       <Paper elevation={3} sx={{ p: 4, width: '90%', maxWidth: 400 }}>
         <Typography variant="h5" fontWeight="bold" mb={2}>
-           Login As Admin
+          Login As Agent
         </Typography>
 
         <TextField
@@ -93,6 +93,17 @@ export default function SuperAdminLogin() {
         >
           Login
         </Button>
+
+        <Typography variant="body2" align="center" mt={2}>
+          New here?{' '}
+          <Link
+            component="button"
+            onClick={() => navigate('/agent-registration')}
+            underline="hover"
+          >
+            Register here
+          </Link>
+        </Typography>
       </Paper>
     </Grid>
   );
