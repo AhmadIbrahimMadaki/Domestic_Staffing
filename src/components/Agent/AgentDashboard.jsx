@@ -17,7 +17,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import PeopleIcon from '@mui/icons-material/People';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import MailIcon from '@mui/icons-material/Mail';
-import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
+// import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import LogoutIcon from '@mui/icons-material/Logout';
 
@@ -42,7 +42,7 @@ const AgentDashboard = () => {
     { text: 'Assign Service Personnel', icon: <AssignmentIcon /> },
     { text: 'Incoming Requests', icon: <MailIcon /> },
     { text: 'My Bookings', icon: <MailIcon /> },
-    { text: 'Assign Staff', icon: <AssignmentTurnedInIcon /> },
+    // { text: 'Assign Staff', icon: <AssignmentTurnedInIcon /> },
     { text: 'Ratings', icon: <StarRateIcon /> },
     { text: 'Logout', icon: <LogoutIcon /> },
   ];
