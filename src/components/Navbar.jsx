@@ -27,7 +27,7 @@ const navLinks = [
     // { label: 'Register', path: '/register', icon: <HowToRegIcon /> },
     { label: 'Admin', path: '/admin/login', icon: <LoginIcon /> },
     { label: 'Agent', path: '/agent/login', icon: <LoginIcon /> },
-    { label: 'Customer', path: '/', icon: <PersonAddIcon /> },
+    { label: 'Customer', path: '/customer-login', icon: <PersonAddIcon /> },
     // { label: 'Agent', path: '/agent-registration', icon: <PersonAddIcon /> },
     // { label: 'Personnel', path: '/personnel-record', icon: <GroupIcon /> },
     // { label: 'Review', path: '/add-review', icon: <StarRateIcon /> },

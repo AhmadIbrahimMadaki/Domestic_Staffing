@@ -20,6 +20,15 @@ import SuperAdmin from './components/Admin/SuperAdminDashboard';
 import Agent from './components/Agent/AgentDashboard';
 import AgentLoginForm from './components/Agent/Login';
 
+
+import CustomerLoginForm from './components/Customer/CustomerLogin';
+import CustomerRegister from './components/Customer/CustomerSignUp';
+import CustomerDashboard from './components/Customer/CustomerDashboard';
+import RequestService from './components/Customer/RequestServiceForm';
+import ChoosePersonnel from './components/Customer/ChoosePersonnel';
+import ViewAndReview from './components/Customer/ViewAndReview';
+import ViewBookingHistory from './components/Customer/ViewBookingHistory';
+
 const theme = createTheme();
 
 function App() {
@@ -45,6 +54,14 @@ function App() {
         <Route path="/agent/dashboard" element={<Agent />} />
         <Route path="/agent/login" element={<AgentLoginForm />} />
         <Route path="/agent-registration" element={<AgentRegistration />} />
+
+        <Route path="/customer-dashboard" element={<CustomerDashboard />} />
+        <Route path="/customer-login" element={<CustomerLoginForm />} />
+        <Route path="/customer-registration" element={<CustomerRegister />} />
+        <Route path="/request-service" element={<RequestService />} />
+        <Route path="/choose-personnel" element={<ChoosePersonnel />} />
+        <Route path="/view-feedback" element={<ViewAndReview />} />
+        <Route path="/booking-history" element={<ViewBookingHistory />} />
       </Routes>
     </Router>
     </ThemeProvider>
