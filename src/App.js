@@ -16,12 +16,13 @@ import ServicePersonnelDetails from './components/ServicePersonnelDetails';
 import PersonnelData from './components/PersonnelData';
 import ServiceRequest from './components/ServiceRequest';
 import SuperAdmin from './components/Admin/SuperAdminDashboard';
+import Login from './components/Login';
 
 import Agent from './components/Agent/AgentDashboard';
-import AgentLoginForm from './components/Agent/Login';
+// import AgentLoginForm from './components/Agent/Login';
 
 
-import CustomerLoginForm from './components/Customer/CustomerLogin';
+// import CustomerLoginForm from './components/Customer/CustomerLogin';
 import CustomerRegister from './components/Customer/CustomerSignUp';
 import CustomerDashboard from './components/Customer/CustomerDashboard';
 import RequestService from './components/Customer/RequestServiceForm';
@@ -45,18 +46,19 @@ function App() {
         <Route path="/add-review" element={<AddReview />} />
         <Route path="/user-booking" element={<UserBookingForm />} />
         <Route path="/admin" element={<AdminDashboard />} />
-        <Route path="/superadmin/dashboard" element={<SuperAdmin />} />
+        <Route path="/superadmin-dashboard" element={<SuperAdmin />} />
         <Route path="/service-personnel-record" element={<ServicePersonnelRecord />} />
         <Route path="/service-personnel-details" element={<ServicePersonnelDetails />} />
         <Route path="/personnel-data" element={<PersonnelData />} />
         <Route path="/service-request" element={<ServiceRequest />} />
+        <Route path="/login" element={<Login />} />
 
-        <Route path="/agent/dashboard" element={<Agent />} />
-        <Route path="/agent/login" element={<AgentLoginForm />} />
+        <Route path="/agent-dashboard" element={<Agent />} />
+        {/* <Route path="/agent/login" element={<AgentLoginForm />} /> */}
         <Route path="/agent-registration" element={<AgentRegistration />} />
 
         <Route path="/customer-dashboard" element={<CustomerDashboard />} />
-        <Route path="/customer-login" element={<CustomerLoginForm />} />
+        {/* <Route path="/customer-login" element={<CustomerLoginForm />} /> */}
         <Route path="/customer-registration" element={<CustomerRegister />} />
         <Route path="/request-service" element={<RequestService />} />
         <Route path="/choose-personnel" element={<ChoosePersonnel />} />

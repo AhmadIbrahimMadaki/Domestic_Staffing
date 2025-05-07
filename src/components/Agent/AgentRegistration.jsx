@@ -133,7 +133,7 @@ const AgentRegistration = () => {
 
           <Typography variant="body2" align="center" mt={2}>
             Already have an account?{' '}
-            <Link component="button" onClick={() => navigate('/agent/login')} underline="hover">
+            <Link component="button" onClick={() => navigate('/login')} underline="hover">
               Login here
             </Link>
           </Typography>

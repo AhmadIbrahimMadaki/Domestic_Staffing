@@ -47,7 +47,7 @@ const AgentDashboard = () => {
   const handleNavigation = (itemText) => {
     if (itemText === 'Logout') {
       localStorage.removeItem('agentToken');
-      navigate('/agent/login');
+      navigate('/login');
     } else {
       setSelectedPage(itemText);
     }

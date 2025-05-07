@@ -136,7 +136,7 @@ export default function CustomerSignUp() {
         <Box textAlign="center" mt={2}>
           <Typography variant="body2">
             Already have an account?{' '}
-            <Link href="/customer-login" underline="hover">
+            <Link href="/login" underline="hover">
               Log in
             </Link>
           </Typography>

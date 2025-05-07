@@ -57,7 +57,7 @@ export default function SuperAdminDashboard() {
   const handleNavigation = (itemText) => {
     if (itemText === 'Logout') {
       localStorage.removeItem('adminToken'); // Adjust key as needed
-      navigate('/admin/login'); // Redirect to login page
+      navigate('/login'); // Redirect to login page
     } else {
       setSelectedPage(itemText);
     }

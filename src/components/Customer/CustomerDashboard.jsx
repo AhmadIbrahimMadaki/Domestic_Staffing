@@ -64,7 +64,7 @@ export default function CustomerDashboard() {
             variant="outlined"
             color="error"
             fullWidth
-            onClick={() => handleNavigate('/customer-login')}
+            onClick={() => handleNavigate('/login')}
           >
             Logout
           </Button>

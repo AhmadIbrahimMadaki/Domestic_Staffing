@@ -10,11 +10,14 @@ import {
   Container,
   Grid,
   Card,
+  Link,
   CardContent,
   CssBaseline,
 } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <>
       <CssBaseline />
@@ -101,6 +104,7 @@ const LandingPage = () => {
         </Typography>
         <Button variant="contained" size="large" color="primary">
           Join Now
+          <Link component="button" onClick={() => navigate('/login')} underline="hover"></Link>
         </Button>
       </Box>
 
